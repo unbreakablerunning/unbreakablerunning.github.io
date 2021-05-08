@@ -135,92 +135,9 @@
 
                 <div id="block" style="background: none !important;border:none;border-radius:0px !important;">
                     <div id="contactform">
-                        <div class="alert alert-success" id="contact-success738012" style="display:none;">
-                            We received your message and will contact you back soon.
-                        </div>
-
-                        <div class="form-group">
-                            <input class="form-control form-control-lg" type="text" name="name" placeholder="Your Name" id="name1738012">
-
-                            <div id="name1738012err" style="display:none;font-size:10px;color:red;">
-                                Enter your name
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <input class="form-control form-control-lg" type="email" name="email" placeholder="Your Email Address" id="email1738012">
-
-                            <div id="email1738012err" style="display:none;font-size:10px;color:red;">
-                                Enter your email
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <input class="form-control form-control-lg" type="text" name="phone" placeholder="Your Phone Number" id="phone1738012">
-                        </div>
-
-                        <div class="form-group">
-                            <textarea class="form-control form-control-lg" name="message" rows="4" placeholder="Your Message" id="message1738012">
-    </textarea>
-                        </div><input class="form-control form-control-lg" type="checkbox" name="gdpr" id="gdpr738012" style="display:inline-block;width:70px;height:70px;zoom: 0.3;padding:23px;" checked> <label style="font-size:8px;display:inline-block;width:80%;" for="gdpr738012">I consent to having this website store my submitted information so they can respond to my inquiry. Learn more in <a href="https://www.contactinbio.com/privacy">our privacy policy</a>.</label>
-
-                        <div style="font-size:8px;display:inline-block;width:80%;display:none;color:red;" id="gdprerror738012">
-                            You need to check the box above
-                        </div><button class="btn btn-lg btn-primary btn-block" style="background: #fff ;border: #fff 2px solid;color:#fff;background:none !important;border:2px solid #fff;border-radius:15px;" type="submit" onclick="sendcontactus738012()">Submit</button><br>
-                        <script type="text/javascript">
-
-
-                        function sendcontactus738012(){
-                        if ($('#gdpr738012').is(':checked')) {
-
-
-                        $(document).ready(function() {
-                        var name = $('#name1738012').val();
-                        var email = $('#email1738012').val();
-                        var phone = $('#phone1738012').val();
-                        var message = $('#message1738012').val();
-
-                        if(document.getElementById("name1738012").value == '')
-                        {
-                        document.getElementById("name1738012err").style.display="block";
-                        }
-                        else if(document.getElementById("email1738012").value == ''){
-                        document.getElementById("email1738012err").style.display="block";
-                        }
-                        else {
-                             document.getElementById("email1738012err").style.display="none";
-                                 document.getElementById("name1738012err").style.display="none";
-                         
-                        $.post("https://www.unbreakablerunning.contactinbio.com/contactform.php",
-                        {
-                        name:name,
-                        email: email,
-                        message: message,
-                        phone: phone,
-                        userid: 102859        },
-                        function(data,status){
-                        document.getElementById("contact-success738012").style.display="block";
-                        alert("Thank you for your message. We will contact you soon.");
-                        setTimeout(function(){
-                        document.getElementById("contact-success738012").style.display="none";
-
-                        }, 5000);
-                        //    alert("Data: " + data + "\nStatus: " + status);
-                        });
-
-                        }
-
-                        })
-                        }   
-                        else {
-                        $("#gdprerror738012").show();
-                        }
-
-                        }
-
-
-                        </script>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSciFRuwMhwLt5Y6rcHAUZ6NBEWQcrXGboiMYKdr9T5IgXoyyQ/viewform?embedded=true" scrolling="no" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
+
                 </div><a linkid="842485" data-ctc-type="link" href="https://tinyurl.com/y9syaz9w" target="_blank">
                 <div id="block" style=" padding: 14px !important; background: #3D3B3C!important ;">
                     <div style=" font-size:18px !important;; font-weight: 600 ; display:inline-block;color: #0FACF3;">
@@ -229,44 +146,6 @@
                 </div></a>
             </div>
         </div>
-        <script type="text/javascript">
-
-
-
-
-
-
-
-        function sendanonymous(){
-
-
-        $(document).ready(function() {
-
-        var message2 = $('#message2').val();
-
-
-            
-            $.post("https://www.unbreakablerunning.contactinbio.com/contactanonymous.php",
-            {
-             
-              message: message2,
-              userid: "102859"
-            },
-            function(data,status){
-                document.getElementById("contact-success2").style.display="block";
-                setTimeout(function(){
-                      document.getElementById("contact-success2").style.display="none";
-                    
-                }, 5000);
-            //    alert("Data: " + data + "\nStatus: " + status);
-            });
-            
-        })
-
-
-        }
-
-        </script><!-- Scripts -->
         <script src="assets/js/core.min.js" type="text/javascript"></script>
         <script src="assets/js/thesaas.min.js" type="text/javascript"></script>
         <script src="assets/js/script.js" type="text/javascript"></script>
